@@ -1136,10 +1136,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abab@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "abab@npm:2.0.6"
-  checksum: 0b245c3c3ea2598fe0025abf7cc7bb507b06949d51e8edae5d12c1b847a0a0c09639abcb94788332b4e2044ac4491c1e8f571b51c7826fd4b0bda1685ad4a278
+"abab@npm:@nolyfill/abab@latest":
+  version: 1.0.28
+  resolution: "@nolyfill/abab@npm:1.0.28"
+  checksum: fb14de140f5fc938c514101ab8e85c2ac647be47d2fbc46343e655df62a8750de0838254f59c81d641d38a47945aa619795b3c2e2f8cd4eab69ccb357d248353
   languageName: node
   linkType: hard
 
