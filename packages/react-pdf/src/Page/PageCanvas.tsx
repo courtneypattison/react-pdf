@@ -104,8 +104,14 @@ export default function PageCanvas(props: PageCanvasProps) {
     canvas.width = renderViewport.width;
     canvas.height = renderViewport.height;
 
-    canvas.style.width = `${Math.floor(viewport.width) * pdfjs.PDF_TO_CSS_UNITS}pt`;
-    canvas.style.height = `${Math.floor(viewport.height) * pdfjs.PDF_TO_CSS_UNITS}pt`;
+            
+    const CSS = 96.0;
+    const PDF = 72.0;
+    const PDF_TO_CSS_UNITS = CSS / PDF;
+
+    canvas.style.width = `${Math.floor(viewport.width) * PDF_TO_CSS_UNITS}px`;
+    canvas.style.height = `${Math.floor(viewport.height) * PDF_TO_CSS_UNITS}px`;
+    
     canvas.style.visibility = 'hidden';
 
     const renderContext: RenderParameters = {
